@@ -28,7 +28,7 @@ class CategoryViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryCell", for: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryCell", for: indexPath) 
         
         cell.textLabel?.text = categoryArray[indexPath.row].name
         return cell
@@ -60,7 +60,7 @@ class CategoryViewController: UITableViewController {
         
         let action = UIAlertAction(title: "Add Category", style: .default) { (action) in
             
-            var category = Category(context: self.context)
+            let category = Category(context: self.context)
             category.name = textField.text
             
             self.categoryArray.append(category)

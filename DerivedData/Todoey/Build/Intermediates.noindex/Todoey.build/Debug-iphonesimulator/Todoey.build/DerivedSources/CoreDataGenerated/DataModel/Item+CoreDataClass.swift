@@ -2,7 +2,7 @@
 //  Item+CoreDataClass.swift
 //  
 //
-//  Created by Jae Moon Lee on 03/07/2019.
+//  Created by Jae Moon Lee on 04/07/2019.
 //
 //  This file was automatically generated and should not be edited.
 //
